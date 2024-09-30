@@ -68,7 +68,7 @@ const NotificationExample = () => {
 
   return (
     <div>
-      <h1>Web Notifications Example</h1>
+      <h3>Web Notifications Example</h3>
       <button onClick={showNotification}>Show Notification</button>
     </div>
   );
