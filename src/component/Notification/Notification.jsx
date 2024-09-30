@@ -50,8 +50,8 @@ const NotificationExample = () => {
         new Notification("Welcome!", {
           body: "You can now receive notifications.",
           //   icon: 'https://example.com/icon.png', // Replace with your icon URL
-          image:
-            "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg", // Replace with your image URL
+        //   image:
+        //     "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg", // Replace with your image URL
         });
         //   }
       } else {
@@ -76,7 +76,7 @@ const NotificationExample = () => {
 
   return (
     <div>
-      <h2>Web Notifications Example</h2>
+      <h1>Web Notifications Example</h1>
       <button onClick={showNotification}>Show Notification</button>
     </div>
   );
