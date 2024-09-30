@@ -47,6 +47,13 @@ const NotificationExample = () => {
       const permission = await Notification.requestPermission();
       if (permission === "granted") {
         console.log("Notification permission granted");
+        new Notification("Welcome!", {
+          body: "You can now receive notifications.",
+          //   icon: 'https://example.com/icon.png', // Replace with your icon URL
+          image:
+            "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg", // Replace with your image URL
+        });
+        //   }
       } else {
         console.error("Notification permission denied");
       }
@@ -59,7 +66,8 @@ const NotificationExample = () => {
     if (Notification.permission === "granted") {
       new Notification("Welcome!", {
         body: "You can now receive notifications.",
-        image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+        image:
+          "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
       });
     } else {
       console.error("Notification permission not granted");
